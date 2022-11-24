@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct ToDoItem: Codable, Identifiable, Hashable {
     var id = UUID()
@@ -37,4 +38,14 @@ struct MyListItem: Identifiable {
     var categoryName: String
     var image: String
     var isSelected : Bool
+}
+
+extension View {
+    func underlineTextField() -> some View {
+        self
+            .padding(.vertical, 10)
+            .overlay(Rectangle().frame(height: 2).padding(.top, 35).foregroundColor(.blue))
+
+            .padding(10)
+    }
 }

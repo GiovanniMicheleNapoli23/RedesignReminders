@@ -59,4 +59,6 @@ class ViewModel: ObservableObject {
             UserDefaults.standard.set(encodedData, forKey: itemsKey)
         }
     }
+    
+    
 }

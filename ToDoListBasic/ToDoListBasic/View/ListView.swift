@@ -8,9 +8,6 @@
 import SwiftUI
 
 struct ListView: View {
-   /* init() {
-        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.systemBlue]
-    }*/
     
     @State var showingSheetTest = false
     @EnvironmentObject var viewModel: ViewModel
@@ -64,13 +61,13 @@ struct ListView: View {
     }
     
 }
-/*
-struct ListView_Previews: PreviewProvider {
-    static var previews: some View {
-        NavigationStack {
-            ListView(sectionName: .constant("Placeholder"))
-        }
-        .environmentObject(ViewModel())
-    }
-}
-*/
+
+//struct ListView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        NavigationStack {
+//            ListView(sectionName: $sectionName, category: "first")
+//        }
+//        .environmentObject(ViewModel())
+//    }
+//}
+

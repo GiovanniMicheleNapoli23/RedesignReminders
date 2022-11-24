@@ -12,19 +12,18 @@ struct CategoriesRowView: View {
     var title: String
     var body: some View {
         HStack {
-            ZStack {
-                Circle()
-                    .frame(height: 40)
-                    .foregroundColor(.blue)
                 Image(systemName: "calendar")
-                        .font(.title2)
+                    .font(.title2)
                     .foregroundColor(.white)
-            }
+                    .padding(8)
+                    .background {
+                        Circle()
+                        .foregroundColor(.accentColor)
+                           
+                    }
             Text(title)
             Spacer()
         }
-        
-        
     }
 }
 

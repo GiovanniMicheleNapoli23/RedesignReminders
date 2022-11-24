@@ -13,13 +13,13 @@ struct MyListsRowView: View {
     
     var body: some View {
         HStack {
-                Image(systemName: "flag.fill")
+                Image(systemName: "list.bullet")
                     .font(.title2)
                     .foregroundColor(.white)
-                    .padding(8)
+                    .padding(10)
                     .background {
                         Circle()
-                        .foregroundColor(.orange)
+                        .foregroundColor(.purple)
                            
                     }
             Text(title)

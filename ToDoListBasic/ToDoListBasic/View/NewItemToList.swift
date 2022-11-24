@@ -12,18 +12,33 @@ struct NewItemToList: View {
     @EnvironmentObject var listViewModel: ViewModel
     @State private var textfield = ""
     var category: String
-    let color = Color(#colorLiteral(red: 0.921431005, green: 0.9214526415, blue: 0.9214410186, alpha: 1))
     
     var body: some View {
         ScrollView {
             VStack {
                 TextField("Type shomething here...", text: $textfield)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .underlineTextField()
+                    .frame(maxWidth: .infinity, minHeight: 55)
                     .padding()
+                    .foregroundColor(.primary)
+                    .shadow(radius: 7)
+                    
                 Button {
                     saveButtonPressed()
                 } label: {
-                    Text("save")
+                    Text("Add to List 🖊️")
+                        .foregroundColor(.white)
+                        .font(.headline.bold())
+                        .frame(height: 55)
+                        .frame(maxWidth: .infinity)
+                        .background {
+                            Color.accentColor
+                            .cornerRadius(15)
+                            .shadow(color: .accentColor, radius: 10)
+                            
+                        }
+                        .padding(50)
+                        
                     
                 }
 
@@ -39,11 +54,11 @@ struct NewItemToList: View {
     }
    
 }
-/*
+
 struct NewItemToList_Previews: PreviewProvider {
     static var previews: some View {
-      
-            NewItemToList()
+        
+        NewItemToList(category: "first")
         
     }
-}*/
+}

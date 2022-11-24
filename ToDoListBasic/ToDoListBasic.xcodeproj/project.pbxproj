@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7D3D86CB2928D6B600F45A66 /* AddListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3D86CA2928D6B600F45A66 /* AddListView.swift */; };
 		7D3D86CD2928D8FC00F45A66 /* NewReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3D86CC2928D8FC00F45A66 /* NewReminderView.swift */; };
 		7D3D86CF2928F08000F45A66 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3D86CE2928F08000F45A66 /* ViewModel.swift */; };
 		7D3D86D1292BF75E00F45A66 /* NewItemToList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3D86D0292BF75E00F45A66 /* NewItemToList.swift */; };
@@ -24,7 +23,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7D3D86CA2928D6B600F45A66 /* AddListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListView.swift; sourceTree = "<group>"; };
 		7D3D86CC2928D8FC00F45A66 /* NewReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReminderView.swift; sourceTree = "<group>"; };
 		7D3D86CE2928F08000F45A66 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		7D3D86D0292BF75E00F45A66 /* NewItemToList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemToList.swift; sourceTree = "<group>"; };
@@ -104,7 +102,6 @@
 				7DCD6A4729269419009F8882 /* ListView.swift */,
 				7D3D86D0292BF75E00F45A66 /* NewItemToList.swift */,
 				7D3D86CC2928D8FC00F45A66 /* NewReminderView.swift */,
-				7D3D86CA2928D6B600F45A66 /* AddListView.swift */,
 				7DCD6A52292783BE009F8882 /* CategoriesRowView.swift */,
 				7DCD6A54292787AF009F8882 /* MyListsRowView.swift */,
 				7DCD6A492926951B009F8882 /* ListRowView.swift */,
@@ -198,7 +195,6 @@
 				7DCD6A39292693A1009F8882 /* ToDoListBasicApp.swift in Sources */,
 				7DCD6A4829269419009F8882 /* ListView.swift in Sources */,
 				7DCD6A4A2926951B009F8882 /* ListRowView.swift in Sources */,
-				7D3D86CB2928D6B600F45A66 /* AddListView.swift in Sources */,
 				7D3D86D1292BF75E00F45A66 /* NewItemToList.swift in Sources */,
 				7DCD6A4F29277C34009F8882 /* Model.swift in Sources */,
 				7DCD6A53292783BE009F8882 /* CategoriesRowView.swift in Sources */,

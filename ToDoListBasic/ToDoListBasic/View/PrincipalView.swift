@@ -8,19 +8,19 @@
 import SwiftUI
 
 struct PrincipalView: View {
-    //ciao
+    
     @ObservedObject var viewModel2 = ViewModel()
     @State var searchableText: String = ""
     @State var showSheetList = false
-    @State var sectionName = "First category"
-    @State var listName = "Flagged"
+    @State var sectionName = "Calendar"
+    @State var listName = "Reminders"
     @State var category: String = ""
     
     var body: some View {
         List {
             Section(content: {
                 NavigationLink(destination: ListView(sectionName: $sectionName, category: "First")) {
-                    CategoriesRowView(title: "First category")
+                    CategoriesRowView(title: "Calendar")
                 }.onTapGesture {
                     category = "First"
                 }
@@ -34,10 +34,10 @@ struct PrincipalView: View {
             })
             
             Section(content: {
-                NavigationLink(destination: ListView(sectionName: $listName, category: "Flagged")) {
-                    MyListsRowView(title: "Flagged")
+                NavigationLink(destination: ListView(sectionName: $listName, category: "Reminders")) {
+                    MyListsRowView(title: "Reminders")
                 }.onTapGesture {
-                    category = "Flagged"
+                    category = "Reminders"
                 }
                 
             },
@@ -57,7 +57,7 @@ struct PrincipalView: View {
                     Image(systemName: "folder.badge.plus")
                 }
                 .sheet(isPresented: $showSheetList) {
-                    AddListView()
+                    NewItemToList(category: "first")
                 }
                 }
             })

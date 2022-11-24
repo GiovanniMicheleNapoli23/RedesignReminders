@@ -8,8 +8,28 @@
 import SwiftUI
 
 struct NewReminderView: View {
+    @Environment(\.presentationMode) var presentationMode
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        Button {
+            presentationMode.wrappedValue.dismiss()
+        } label: {
+            Text("Work in progress")
+                .foregroundColor(.white)
+                .font(.headline.bold())
+                .frame(height: 55)
+                .frame(maxWidth: .infinity)
+                .background {
+                    Color.accentColor
+                    .cornerRadius(15)
+                    .shadow(color: .accentColor, radius: 10)
+                    
+                }
+                .padding(50)
+        }
+
+            
+        
     }
 }
 
