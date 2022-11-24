@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PrincipalView: View {
-    
+    //ciao
     @ObservedObject var viewModel2 = ViewModel()
     @State var searchableText: String = ""
     @State var showSheetList = false
