@@ -50,7 +50,7 @@ class ViewModel: ObservableObject {
     
     func uptateItem(item: ToDoItem) {
         if let index = items.firstIndex(where: { $0.id == item.id}) {
-            items[index] = item.uptateCompletion()
+            items[index].isCompleted.toggle()
         }
     }
     

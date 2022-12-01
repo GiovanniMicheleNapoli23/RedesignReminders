@@ -21,10 +21,9 @@ struct ToDoItem: Codable, Identifiable, Hashable {
         self.category = category
     }
     
-    func uptateCompletion() -> ToDoItem {
-        return ToDoItem(itemName: itemName, isCompleted: !isCompleted, category: category)
-    }
-    
+//    func uptateCompletion() -> ToDoItem {
+//        return ToDoItem(itemName: itemName, isCompleted: !isCompleted, category: category)
+//    }
 }
 
 struct CategoryItem: Codable, Identifiable, Hashable {

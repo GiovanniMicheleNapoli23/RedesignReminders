@@ -6,12 +6,22 @@
 //
 
 import Foundation
+import UIKit
 
-extension FileManager {
-    /// The documents directory for this app.
-    static var documentsDirectory: URL {
-        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        return paths[0]
+fileprivate class HapticsManager {
+    
+    static let shared = HapticsManager()
+    
+    private let feedback = UINotificationFeedbackGenerator()
+    
+    private init() { }
+    
+    func trigger(_ notification: UINotificationFeedbackGenerator.FeedbackType) {
+        feedback.notificationOccurred(notification)
     }
+    
 }
- 
+//func haptic(_ notification: UINotificationFeedbackGenerator.FeedbackType) {
+//    HapticsManager.
+//}
+//
