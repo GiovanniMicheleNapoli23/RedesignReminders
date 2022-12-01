@@ -52,6 +52,7 @@ struct PrincipalView: View {
                     
                     Button {
                         showSheetList.toggle()
+                        HapticManager.instance.impact(style: .rigid)
                     }
                 label: {
                     Image(systemName: "folder.badge.plus")
@@ -66,7 +67,8 @@ struct PrincipalView: View {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Menu {
                     Button("Edit List", action: viewModel2.editList)
-                }                                                                            label: {
+                    
+                }                                                          label: {
                     Label("Add Item", systemImage: "ellipsis.circle")
                 }
             }
@@ -74,6 +76,7 @@ struct PrincipalView: View {
                 HStack {
                     Button {
                         showSheetList.toggle()
+                        HapticManager.instance.impact(style: .heavy)
                     } label: {
                         HStack {
                             Image(systemName: "plus.circle.fill")
@@ -86,6 +89,7 @@ struct PrincipalView: View {
                         .sheet(isPresented: $showSheetList) {
                             NewReminderView()
                         }
+                    
                 }
             }
         }

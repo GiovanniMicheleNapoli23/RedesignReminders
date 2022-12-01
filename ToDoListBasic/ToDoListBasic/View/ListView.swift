@@ -37,6 +37,7 @@ struct ListView: View {
                 HStack {
                     Button {
                         showingSheetTest.toggle()
+                        HapticManager.instance.impact(style: .heavy)
                     } label: {
                         HStack {
                             Image(systemName: "plus.circle.fill")

@@ -25,6 +25,7 @@ struct NewItemToList: View {
                     
                 Button {
                     saveButtonPressed()
+                    HapticManager.instance.notification(type: .success)
                 } label: {
                     Text("Add to List 🖊️")
                         .foregroundColor(.white)
